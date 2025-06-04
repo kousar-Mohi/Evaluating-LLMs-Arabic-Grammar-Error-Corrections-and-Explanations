@@ -1,8 +1,10 @@
 # Evaluating-LLMs-Arabic-Grammar-Error-Corrections-and-Explanations
 
-##	Description – An overview of the code/dataset.
+##	Description.
+This paper evaluates the performance of LLMs in correcting and explaining Arabic grammatical errors. In addition, the paper explores different techniques such as fine-tuning, zero-shot prompting, and few-shot prompting techniques. Also, we used two datasets, a Manual Arabic Spelling Error Correction corpus and the Hugging Face Arabic GEC dataset. 
 
 ##	Dataset Information.
+[Manual Arabic spelling-errors correction](https://d1wqtxts1xzle7.cloudfront.net/108712620/IJCDS1301116-libre.pdf?1702274347=&response-content-disposition=inline%3B+filename%3DA_new_spell_checking_approach_based_on_t.pdf&Expires=1749046646&Signature=eKt-EBQcTBSaqEjElrz1zeoh0LMqHRtn-Rl6UPj~N3btvbLYkLOtv5b1ZurWWMqMgBAh0zJpdR2~Bgp6trjVGI4nfCFieyZQufAD4qNXNuV7tfqb~BN1Lt9JfXt1QADg6U9iAAlrCWZGh-t~lzClQTpB-fnsR51O3MsJ-yHfSpWihQHm1y4bJpIIAzdER5EeqfMIfYr0pICtaGkuIVAs41JwU9~kbMoWBf80G4~ualzAXSfuKDu3NMVvFCZLg47i-5-keT7viAjpJgsHS7Pz43Hv678kXeYPLeUqyDOVLEbQHhRVUCatT-GsAv3qvTHe0fPmEqIWvgXKkjWmFWoE4g__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA) is a text corpus designed for Arabic spell-checking; it was compiled from various files edited by a group of individuals  . This file contains the following sections (tags): people - documents they printed - types of possible errors - errors they made. Each section (tag) contains some data that explains its details and its content, which helps researchers extracting research-oriented results. The people section contains basic information about each person and its relationship of using the computer, while the documents section clarifies all sentences in each document with the numbering of each sentence to be used in the errors section that was committed. We are also adding the "type of errors" section in which we list all the possible errors with their description in the Arabic language and give an illustrative example.
 
 ##	Code Information.
 
