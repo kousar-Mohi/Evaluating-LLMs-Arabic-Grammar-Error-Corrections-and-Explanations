@@ -27,10 +27,12 @@ All the following code files are uploaded in the repositry.
 
 ##	Usage Instructions
 The Javascript files are ran in Visual Studio Code
+
 The Python files are ran in Google Colab Notebook
 
 ##	Requirements – Any dependencies (e.g., Python libraries).
 All the libraries needed for Python files are mentioned in the files.
+
 All the libraries needed for Javascript files are mentioned in the files. But for Visual Studio Code, you have to install node.js as an additional step. 
 
 ##	Citations.
