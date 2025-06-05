@@ -5,13 +5,13 @@ This paper evaluates the performance of LLMs in correcting and explaining Arabic
 
 ##	Dataset Information.
 First dataset is Manual Arabic spelling-errors correction which is a text corpus designed for Arabic spell-checking; it was compiled from various files edited by a group of individuals and published by the Sudan University of Science and Technology. The corpus consists of 11,098 words containing 1,888 errors and 20 error types, structured into several sections. It is an [XML File](https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-4763) that contains the following:
-It has tags such as <persons>, <documents>, <errorType>, <errorWord>, etc. where each section contains data that elaborate on its content, which assists researchers in extracting valuable insights.
+It has tags such as "<persons>", "<documents>", "<errorType>", "<errorWord>", etc. where each section contains data that elaborate on its content, which assists researchers in extracting valuable insights.
 - Persons section contains basic information about each person and its relationship of using the computer
 - Documents section clarifies all sentences in each document with the numbering of each sentence to be used in the errors section that was committed.
 - Type of errors section lists all the possible errors with their description in the Arabic language and give an illustrative example.
 This dataset will be used as training data to finetune the models.
 
-Second dataset is [Arabic GEC dataset shared on the Hugging Face platform](https://huggingface.co/datasets/s3h/arabic-grammar-corrections). It has over 390,000 Arabic erroneous sentences and their corrections (baseline). We chose the first 2,000 records to evaluate the ability of both base and fine-tuned models in correcting erroneous sentences and explaining the purpose of corrections. Figure \ref{fig:dataset2} presents a sample of the dataset.
+Second dataset is [Arabic GEC dataset shared on the Hugging Face platform](https://huggingface.co/datasets/s3h/arabic-grammar-corrections). It has over 390,000 Arabic erroneous sentences and their corrections (baseline). We chose the first 2,000 records to evaluate the ability of both base and fine-tuned models in correcting erroneous sentences and explaining the purpose of corrections.
 This dataset will be used to evaluate LLM's performance.
 
 ##	Code Information.
