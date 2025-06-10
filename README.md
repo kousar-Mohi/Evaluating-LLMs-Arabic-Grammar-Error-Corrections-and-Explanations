@@ -50,7 +50,7 @@ We used particular prompts to produce precise corrections and meaningful explana
 
 ###	Computing infrastructure
 Two Computing infrastructures were used:
-- Local Machine: Lenovo YOGA 9i, 1T SSD
+- Local Machine: Lenovo YOGA 9i, 1T SSD, Windows operating system
 - Google Colab: Python3, CPU and T4 GPU
 
 ###	Evaluation method: 
