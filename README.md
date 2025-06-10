@@ -41,12 +41,15 @@ If you find the datasets useful in your research, please cite the following:
 - This is the Arabic GEC dataset shared on the Hugging Face platform [Link](https://huggingface.co/datasets/s3h/arabic-grammar-corrections).
 
 ##	Materials & Methods
-### Data Processing & Approach   
 We aimed to prompt and finetune the chosen LLMs (GPT, Gemini, Llama, and ALLaM) to evaluate their capabilities for Arabic Grammar Error Correction and Explanation tasks. The following image shows the pipeline of our full approach:
 
 ![pipeline](https://github.com/user-attachments/assets/97e9cba3-5799-4fc8-b3ec-8dcb6fe8dc26)
 
-We used particular prompts to produce precise corrections and meaningful explanations from the language models. Regarding fine-tuning the models, we adopted the output structure of the manual Arabic spelling-errors correction corpus to train the models, while excluding the first three keys (documentID, statmentID, and PersonID). We wrote a script to get the data in the XML file and convert it to a JSON object for easier processing. Additionally, we prompted GPT-4o-mini to add a new key called "explanation," which provides the rationale behind correcting the word. This addition ensures that the output is both informative and comprehensive and offers a complete understanding of the error correction process. After preparing the training data, we fine-tuned GPT4o and Gemini through API requests. For Llama, we utilized a third-party application, Laminai, to finetune the model. Regarding the prompting approach, we employed two well-known prompting techniques: zero-shot and few-shot. Finally, we used the Hugging Face Arabic GEC dataset to evaluate the performance and accuracy of both base and finetuned models. 
+### Data Preprocessing
+For fine-tuning, we first preprocessed the Manual Arabic Spelling Errors Correction corpus. Specifically, we adopted its output structure while excluding the first three keys: `documentID`, `statementID`, and `PersonID`. To enhance the training data, we prompted GPT-4o-mini to include an additional key called `"explanation"` that provides the rationale behind each correction. This makes the output both informative, comprehensive and offers a complete understanding of the error correction process. 
+
+### Model Fine-Tuning and Prompting Techniques 
+After preparing the training data, we fine-tuned GPT4o and Gemini through API requests. For Llama, we used Laminai third-party application to fine-tune the model. Finally, we used the Hugging Face Arabic GEC dataset to evaluate the performance and accuracy of the fine-tuned models. For prompting, we employed two common techniques: zero-shot and few-shot prompting. The zero-shot approach prompts LLMs without providing examples to measure their natural capabilities. We asked each LLM to correct the erroneous sentence and provide the corrected sentence, the number of errors found in the sentence (and for each error, the corrected word and the type of error, identified in English and Arabic), and finally, a detailed explanation for the corrections applied.
 
 ###	Computing infrastructure
 we used a Lenovo YOGA 9i with 16 GB RAM and 1T storage using a Windows operating system. Additionally, we utilized Python3 on Google Colab, running data on both CPU and T4 GPU environments.
