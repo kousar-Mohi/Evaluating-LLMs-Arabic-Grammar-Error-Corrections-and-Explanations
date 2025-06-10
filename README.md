@@ -49,9 +49,7 @@ We aimed to prompt and finetune the chosen LLMs (GPT, Gemini, Llama, and ALLaM) 
 We used particular prompts to produce precise corrections and meaningful explanations from the language models. Regarding fine-tuning the models, we adopted the output structure of the manual Arabic spelling-errors correction corpus to train the models, while excluding the first three keys (documentID, statmentID, and PersonID). We wrote a script to get the data in the XML file and convert it to a JSON object for easier processing. Additionally, we prompted GPT-4o-mini to add a new key called "explanation," which provides the rationale behind correcting the word. This addition ensures that the output is both informative and comprehensive and offers a complete understanding of the error correction process. After preparing the training data, we fine-tuned GPT4o and Gemini through API requests. For Llama, we utilized a third-party application, Laminai, to finetune the model. Regarding the prompting approach, we employed two well-known prompting techniques: zero-shot and few-shot. Finally, we used the Hugging Face Arabic GEC dataset to evaluate the performance and accuracy of both base and finetuned models. 
 
 ###	Computing infrastructure
-Two Computing infrastructures were used:
-- Local Machine: Lenovo YOGA 9i, 1T SSD, Windows operating system
-- Google Colab: Python3, CPU and T4 GPU
+we used a Lenovo YOGA 9i with 16 GB RAM and 1T storage using a Windows operating system. Additionally, we utilized Python3 on Google Colab, running data on both CPU and T4 GPU environments.
 
 ###	Evaluation method: 
 We have used Cross-dataset testing to validate the LLM’s effectiveness in addition to the following evaluation metrics: Cosine Similarity, BLEU (Bilingual Evaluation Understudy), Levenshtein Distance, WER (Word Error Rate), CER (Charachter Error Rate), CLEME (Chunk-LEvel Multi-reference Evaluation), GLEU (Generalized Language Evaluation Understanding), and ROUGE (Recall-Oriented Understudy for Gisting Evaluation)..
