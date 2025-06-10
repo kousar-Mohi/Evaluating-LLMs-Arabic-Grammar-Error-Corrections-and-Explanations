@@ -37,7 +37,7 @@ All the libraries needed for Javascript files are mentioned in the files. But fo
 
 ##	Citations.
 If you find the datasets useful in your research, please cite the following:
-- A New Spell-Checking Approach Based on the User Profile (Saty et al., 2023) ([BIB](https://scholar.googleusercontent.com/scholar.bib?q=info:Tu6u_2dtZw4J:scholar.google.com/&output=citation&scisdr=CgL3yDWZEI2omfxL_3Y:AAZF9b8AAAAAaEFN53bahu94zWIyrMPRYo9uElI&scisig=AAZF9b8AAAAAaEFN55oo7dcPC76yjm1vlL3C23Q&scisf=4&ct=citation&cd=-1&hl=en)).
+- A New Spell-Checking Approach Based on the User Profile (Saty et al., 2023).
 - This is the Arabic GEC dataset shared on the Hugging Face platform [Link](https://huggingface.co/datasets/s3h/arabic-grammar-corrections).
 
 ##	Materials & Methods
